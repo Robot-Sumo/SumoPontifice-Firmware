@@ -18,7 +18,7 @@ void setup() {
   while (WiFi.status() != WL_CONNECTED) {  //Wait for the WiFI connection completion
  
     delay(500);
-    Serial.println("Waiting for connection");
+    //Serial.println("Waiting for connection");
  
   }
  
@@ -55,27 +55,21 @@ void loop() {
     int httpCode = http.POST(JSONmessageBuffer);   //Send the request
     String payload = http.getString();                                        //Get the response payload
 
-    StaticJsonBuffer<200> jsonBuffer;
-
-    JsonObject& root = jsonBuffer.parseObject(payload);
-    
-    long rpm         = root["rpm"];
     if (httpCode>0)
     {
-    //Serial.println(httpCode);   //Print HTTP return code
-    Serial.println(rpm);    //Print request response payload
+    Serial.println(payload);   //Print HTTP return code
     }
     else{
-      Serial.println("Error sending JSON to Server");
+      //Serial.println("Error sending JSON to Server");
       }
     http.end();  //Close connection
  
   } else {
  
-    Serial.println("Error in WiFi connection");
+    //Serial.println("Error in WiFi connection");
  
   }
  
-  delay(100);  //Send a request every 30 seconds
+  delay(50);  //Send a request every 30 seconds
  
 }
