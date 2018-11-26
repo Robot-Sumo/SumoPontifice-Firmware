@@ -12,8 +12,8 @@ const int U2_echo = 47;
 const int U3_trig = A14;
 const int U3_echo = A15;
 const int U3_vcc = A13;
-const int INF_A = 34;
-const int LED1 = 46;
+const int INF_A = 46;
+const int LED1 = 34;
 const int BUZZER = A12;
 
 int period = 1000; //us

@@ -16,7 +16,7 @@ const int LED1 = 46;
 const int BUZZER = A12;
 
 int period = 1000; //us
-float PWM_HIGH = 1;
+float PWM_HIGH = 0.5;
 void setup() {
   // put your setup code here, to run once:
   pinMode(BUZZER, OUTPUT);
