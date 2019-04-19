@@ -52,7 +52,7 @@ void serialEvent3() {
     inputString += inChar;
     // if the incoming character is a newline, set a flag so the main loop can
     // do something about it:
-      stringComplete = true;
+    stringComplete = true;
     
   }
 }

@@ -1,10 +1,13 @@
 // Motores
 const int M1_out1 = 2;
 const int M1_out2 = 3;
+const int M1_in = 4;
 const int M2_out1 = 5;
 const int M2_out2 = 6;
+const int M2_in = 7;
 const int M3_out1 = 8;
 const int M3_out2 = 9;
+const int M3_in = 10;
 
 // Ultrasonido
 const int U1_echo = 23;
@@ -37,3 +40,11 @@ const int inf1 = A8;
 const int inf1 = A9;
 const int inf1 = A10;
 const int inf1 = A11;
+
+// Encoders
+const int encoder_right = 20//Rueda derecha, E1
+const int encoder_right_vcc = 21 // Alimentacion encoders;
+const int encoder_left = 18;
+
+// Boton
+const int master_button = 19;

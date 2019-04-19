@@ -3,6 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
+                "/home/lujano/.arduino15/packages/arduino/tools/**",
+                "/home/lujano/.arduino15/packages/arduino/hardware/avr/1.6.23/**",
                 "/home/lujano/arduino-1.8.6/tools/**",
                 "/home/lujano/arduino-1.8.6/hardware/arduino/avr/**",
                 "/home/lujano/.arduino15/packages/esp8266/tools/**",
@@ -17,7 +19,7 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64",
             "forcedInclude": [
-                "/home/lujano/arduino-1.8.6/hardware/arduino/avr/cores/arduino/Arduino.h"
+                "/home/lujano/.arduino15/packages/arduino/hardware/avr/1.6.23/cores/arduino/Arduino.h"
             ]
         }
     ],
